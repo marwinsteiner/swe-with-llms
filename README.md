@@ -9,7 +9,7 @@ graph TD
     FeatureBreakdown --> |Creates|DocFeatures[feature_contracts/*.md]
     
     %% Phase 2: Feature Implementation Loop
-    FeatureBreakdown --> ContractGen[Generate Technical Contract]
+    FeatureBreakdown --> ContractGen[Generate Technical Specification]
     ContractGen --> |Creates|DocContract[contract.md]
     
     %% Implementation Subphase
@@ -44,7 +44,7 @@ graph TD
     classDef doc fill:#bbf,stroke:#333,stroke-width:2px
     classDef decision fill:#dfd,stroke:#333,stroke-width:2px
     
-    class ProjectSpec,IntegrationPhase phase
+    class ProjectSpec,IntegrationPhase,TechRequirements phase
     class DocProject,DocFeatures,DocContract doc
     class ContractCheck,IntCheck,NextFeature decision
 ```
