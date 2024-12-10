@@ -1,7 +1,7 @@
 ```mermaid
 graph TD
     %% Phase 1: Project Initialization
-    Start[Start Project] --> ProjectSpec[Generate Project Specification]
+    Start[Prose Project Description] --> ProjectSpec[Generate Project Specification]
     ProjectSpec --> FeatureBreakdown[Feature Breakdown]
     
     %% Documentation Creation
